@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="glass glass-hover rounded-xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <h3 className="font-medium text-lg">CryptoTrade</h3>
+              <h3 className="font-medium text-lg">Minture</h3>
               <p className="text-sm text-muted-foreground">
-                Empowering traders with advanced crypto trading solutions.
+                SIP-as-a-Service API enabling automated, non-custodial Web3 investments for modern platforms.
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="icon">
@@ -23,16 +23,16 @@ const Footer = () => {
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Trading</h4>
+              <h4 className="font-medium">Platform</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Markets
+                  <a href="#partners" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    API Integration
                   </a>
                 </li>
                 <li>
-                  <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Trading Fees
+                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors opacity-60">
+                    Partner Portal <span className="text-xs text-yellow-400">Coming Soon</span>
                   </a>
                 </li>
               </ul>
@@ -42,13 +42,13 @@ const Footer = () => {
               <h4 className="font-medium">Resources</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Trading Guide
+                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors opacity-60">
+                    API Docs <span className="text-xs text-yellow-400">Coming Soon</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Market Analysis
+                  <a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Developer Support
                   </a>
                 </li>
               </ul>
@@ -73,7 +73,7 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-white/10">
             <p className="text-sm text-muted-foreground text-center">
-              © {new Date().getFullYear()} Rezaul Arif. All rights reserved.
+              © {new Date().getFullYear()} Minture. All rights reserved. Partner onboarding and dashboard—coming soon.
             </p>
           </div>
         </div>
