@@ -42,8 +42,6 @@ const Navigation = () => {
   const navItems = [
     { name: "How it Works", href: "#how-it-works", onClick: () => scrollToSection('how-it-works') },
     { name: "For Partners", href: "#partners", onClick: () => scrollToSection('partners') },
-    { name: "Docs", href: "#", onClick: null, disabled: true },
-    { name: "Contact", href: "#contact", onClick: () => scrollToSection('contact') },
   ];
 
   return (
@@ -62,7 +60,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className={`hidden md:flex items-center ${isScrolled ? "gap-4" : "gap-6"}`}>
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -73,18 +71,9 @@ const Navigation = () => {
                     item.onClick();
                   }
                 }}
-                className={`text-sm transition-all duration-300 ${
-                  item.disabled 
-                    ? "text-muted-foreground/50 cursor-not-allowed" 
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                className="text-sm transition-all duration-300 text-muted-foreground hover:text-foreground"
               >
                 {item.name}
-                {item.disabled && (
-                  <span className="text-xs bg-yellow-500/20 text-yellow-400 px-1.5 py-0.5 rounded ml-1">
-                    Coming Soon
-                  </span>
-                )}
               </a>
             ))}
             <Button 
