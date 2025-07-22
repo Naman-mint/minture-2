@@ -20,7 +20,7 @@ const Navigation = () => {
     if (sectionId === 'testimonials') {
       const testimonialSection = document.querySelector('.animate-marquee');
       if (testimonialSection) {
-        const yOffset = -100; // Offset to account for the fixed header
+        const yOffset = -100;
         const y = testimonialSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
@@ -52,14 +52,15 @@ const Navigation = () => {
           : "h-14 bg-[#1B1B1B] w-[95%] max-w-3xl"
       }`}
     >
-      <div className="mx-auto h-full px-6 max-w-4xl">
-        <nav className="flex items-center justify-between h-full">
+      <div className="mx-auto h-full px-6">
+        <nav className="flex items-center justify-start h-full gap-8 w-full">
           <div className="flex items-center gap-2">
             <Command className="w-5 h-5 text-primary" />
             <span className="font-bold text-base">Minture</span>
           </div>
 
-          {/* Desktop Navigation */}
+          <div className="flex-1" />
+
           <div className={`hidden md:flex items-center ${isScrolled ? "gap-4" : "gap-6"}`}>
             {navItems.map((item) => (
               <a
@@ -85,7 +86,6 @@ const Navigation = () => {
             </Button>
           </div>
 
-          {/* Mobile Navigation */}
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
