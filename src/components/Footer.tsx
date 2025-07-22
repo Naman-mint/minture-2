@@ -26,21 +26,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h4 className="font-medium">Platform</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#partners" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    API Integration
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors opacity-60">
-                    Partner Portal <span className="text-xs text-yellow-400">Coming Soon</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <div />
             
             <div className="space-y-4">
               <h4 className="font-medium">Resources</h4>
@@ -48,11 +34,6 @@ const Footer = () => {
                 <li>
                   <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors opacity-60">
                     API Docs <span className="text-xs text-yellow-400">Coming Soon</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Developer Support
                   </a>
                 </li>
               </ul>
