@@ -91,9 +91,10 @@ const Index = () => {
         </motion.div>
       </motion.section>
 
-      {/* Logo Carousel */}
-      <LogoCarousel />
-
+{/*       {/* Logo Carousel */}
+      <LogoCarousel />      
+       */}
+      
       {/* Why Partners Choose Minture */}
       <div id="partners" className="bg-black">
         <FeaturesSection />
@@ -209,14 +210,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Partner Trust Section */}
+{/*       {/* Partner Trust Section */}
       <section className="container px-4 py-20 bg-black">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center"
-        >
+        > */}
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Trusted by Leading Platforms</h2>
           <div className="glass rounded-xl p-12">
             <div className="flex items-center justify-center space-x-4 mb-4">
