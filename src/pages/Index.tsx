@@ -198,10 +198,7 @@ const Index = () => {
             
             <div className="mt-6 text-center">
               <p className="text-sm text-muted-foreground">
-                <span className="inline-flex items-center px-2 py-1 rounded bg-yellow-500/20 text-yellow-400 text-xs mr-2">
-                  Coming Soon
-                </span>
-                Full partner documentation and onboarding
+                Full partner documentation and onboarding coming soon.
               </p>
             </div>
           </div>
@@ -209,9 +206,6 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <div className="bg-black">
-        <TestimonialsSection />
-      </div>
 
       {/* FAQ Section */}
       <div className="bg-black">
@@ -242,8 +236,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="button-gradient">
-              Start Integration
-              <ArrowRight className="ml-2 w-4 h-4" />
+              Join Waitlist
             </Button>
             <Button size="lg" variant="outline" className="opacity-60 cursor-not-allowed">
               Partner Dashboard
