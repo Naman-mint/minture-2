@@ -1,3 +1,47 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Card } from "./ui/card";
+
+const testimonials = [
+  {
+    name: "David Kim",
+    role: "CTO, NeoWallet",
+    image: "https://avatars.githubusercontent.com/u/1234567?v=4",
+    content: "Minture's API integration was seamless. Our users love the automated investment features, and the non-custodial approach gives them complete control."
+  },
+  {
+    name: "Lisa Parker",
+    role: "Head of Product, DeFi Solutions",
+    image: "https://avatars.githubusercontent.com/u/2345678?v=4",
+    content: "The compliance features and reporting tools made regulatory approval straightforward. Minture understands what enterprise partners need."
+  },
+  {
+    name: "James Wilson",
+    role: "Technical Director, CryptoBank",
+    image: "https://avatars.githubusercontent.com/u/3456789?v=4",
+    content: "Implementing SIPs for our institutional clients was complex until we found Minture. The developer experience and support have been exceptional."
+  },
+  {
+    name: "Emily Chen",
+    role: "Founder, WalletPro",
+    image: "https://avatars.githubusercontent.com/u/4567890?v=4",
+    content: "Minture's multi-chain support and NFT capabilities helped us differentiate our platform. Integration took days, not months as we expected."
+  },
+  {
+    name: "Michael Torres",
+    role: "VP Engineering, FinFlow",
+    image: "https://avatars.githubusercontent.com/u/5678901?v=4",
+    content: "The automated execution and analytics dashboard have been game-changers for our compliance reporting. Our users trust the non-custodial approach."
+  },
+  {
+    name: "Sarah Williams",
+    role: "Product Lead, InvestApp",
+    image: "https://avatars.githubusercontent.com/u/6789012?v=4",
+    content: "Minture enabled us to offer recurring crypto investments without the complexity of building it ourselves. Our user engagement has increased 300%."
+  }
+];
 
 const TestimonialsSection = () => {
   return (
