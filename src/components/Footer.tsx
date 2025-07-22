@@ -1,6 +1,6 @@
 import { Github, Twitter } from "lucide-react";
 import { Button } from "./ui/button";
-import Logo from "../assets/logo.svg"; // Adjust the path according to your project
+import Logo from "../assets/logo.png"; // Adjust the path according to your project
 
 const Footer = () => {
   return (
