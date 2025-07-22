@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card } from "./ui/card";
+// import { Card } from "./ui/card"; // Removed unused import
 
 const TestimonialsSection = () => {
   return (
@@ -22,17 +22,17 @@ const TestimonialsSection = () => {
         </motion.div>
 
         {/* Coming Soon Box */}
-            <div className="glass rounded-xl p-12">
-            <div className="flex items-center justify-center space-x-4 mb-4">
-              <span className="inline-flex items-center px-3 py-2 rounded-full bg-yellow-500/20 text-yellow-400 text-sm font-medium">
-                Coming Soon
-              </span>
-            </div>
-            <p className="text-muted-foreground">
-              Join the waitlist of leading wallets and fintech platforms
-            </p>
+        <div className="glass rounded-xl p-12">
+          <div className="flex items-center justify-center space-x-4 mb-4">
+            <span className="inline-flex items-center px-3 py-2 rounded-full bg-yellow-500/20 text-yellow-400 text-sm font-medium">
+              Coming Soon
+            </span>
           </div>
-        
+          <p className="text-muted-foreground">
+            Join the waitlist of leading wallets and fintech platforms
+          </p>
+        </div>
+      </div> {/* <-- Added missing closing div */}
     </section>
   );
 };
