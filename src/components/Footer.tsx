@@ -17,12 +17,7 @@ const Footer = () => {
                 SIP-as-a-Service API enabling automated, non-custodial Web3 investments for modern platforms.
               </p>
               <div className="flex space-x-4">
-                <Button variant="ghost" size="icon">
-                  <Twitter className="w-4 h-4" />
-                </Button>
-                <Button variant="ghost" size="icon">
-                  <Github className="w-4 h-4" />
-                </Button>
+                
               </div>
             </div>
 
