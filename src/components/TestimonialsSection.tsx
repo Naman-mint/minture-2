@@ -22,12 +22,17 @@ const TestimonialsSection = () => {
         </motion.div>
 
         {/* Coming Soon Box */}
-        <div className="flex justify-center">
-          <Card className="w-[400px] bg-black/40 backdrop-blur-xl border-white/5 hover:border-white/10 transition-all duration-300 p-8 flex items-center justify-center">
-            <span className="text-white/70 text-2xl font-semibold">Coming Soon</span>
-          </Card>
-        </div>
-      </div>
+            <div className="glass rounded-xl p-12">
+            <div className="flex items-center justify-center space-x-4 mb-4">
+              <span className="inline-flex items-center px-3 py-2 rounded-full bg-yellow-500/20 text-yellow-400 text-sm font-medium">
+                Coming Soon
+              </span>
+            </div>
+            <p className="text-muted-foreground">
+              Join the waitlist of leading wallets and fintech platforms
+            </p>
+          </div>
+        
     </section>
   );
 };
