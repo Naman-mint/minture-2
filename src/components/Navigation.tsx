@@ -52,7 +52,7 @@ const Navigation = () => {
           : "h-14 bg-[#1B1B1B] w-[95%] max-w-3xl"
       }`}
     >
-      <div className="mx-auto h-full px-6">
+      <div className="mx-auto h-full px-6 max-w-4xl">
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center gap-2">
             <Command className="w-5 h-5 text-primary" />
