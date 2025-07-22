@@ -48,19 +48,19 @@ const Navigation = () => {
     <header
       className={`fixed top-3.5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
         isScrolled 
-          ? "h-14 bg-[#1B1B1B]/40 backdrop-blur-xl border border-white/10 scale-95 w-[90%] max-w-2xl" 
+          ? "h-12 bg-[#1B1B1B]/40 backdrop-blur-xl border border-white/10 w-[90%] max-w-2xl" 
           : "h-14 bg-[#1B1B1B] w-[95%] max-w-3xl"
       }`}
     >
-      <div className={`mx-auto h-full transition-all duration-300 ${isScrolled ? "px-4" : "px-6"}`}>
+      <div className={`mx-auto h-full transition-all duration-300 ${isScrolled ? "px-3" : "px-6"}`}>
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center gap-2">
-            <Command className="w-5 h-5 text-primary" />
-            <span className="font-bold text-base">Minture</span>
+            <Command className={`text-primary transition-all duration-300 ${isScrolled ? "w-4 h-4" : "w-5 h-5"}`} />
+            <span className={`font-bold transition-all duration-300 ${isScrolled ? "text-sm" : "text-base"}`}>Minture</span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className={`hidden md:flex items-center transition-all duration-300 ${isScrolled ? "gap-3" : "gap-6"}`}>
+          <div className={`hidden md:flex items-center transition-all duration-300 ${isScrolled ? "gap-2" : "gap-6"}`}>
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -71,15 +71,15 @@ const Navigation = () => {
                     item.onClick();
                   }
                 }}
-                className="text-sm transition-all duration-300 text-muted-foreground hover:text-foreground"
+                className={`transition-all duration-300 text-muted-foreground hover:text-foreground ${isScrolled ? "text-xs" : "text-sm"}`}
               >
                 {item.name}
               </a>
             ))}
             <Button 
               onClick={() => scrollToSection('cta')}
-              size="sm"
-              className="button-gradient"
+              size={isScrolled ? "sm" : "sm"}
+              className={`button-gradient transition-all duration-300 ${isScrolled ? "text-xs px-3 py-1" : ""}`}
             >
               Integrate Minture
             </Button>
@@ -89,8 +89,8 @@ const Navigation = () => {
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="glass">
-                  <Menu className="h-5 w-5" />
+                <Button variant="outline" size="icon" className={`glass transition-all duration-300 ${isScrolled ? "h-8 w-8" : "h-10 w-10"}`}>
+                  <Menu className={`transition-all duration-300 ${isScrolled ? "h-4 w-4" : "h-5 w-5"}`} />
                 </Button>
               </SheetTrigger>
               <SheetContent className="bg-[#1B1B1B]">
