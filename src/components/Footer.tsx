@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <img src={Logo} alt="Minture Logo" className="h-6 w-6" />
-                <h3 className="font-medium text-lg">Minture</h3>
+                <img src={Logo} alt="Minture Logo" className="h-12 w-12" />
+                <h3 className="font-medium text-2xl">Minture</h3>
               </div>
               <p className="text-sm text-muted-foreground">
                 SIP-as-a-Service API enabling automated, non-custodial Web3 investments for modern platforms.
