@@ -52,7 +52,7 @@ const Navigation = () => {
           : "h-14 bg-[#1B1B1B] w-[95%] max-w-3xl"
       }`}
     >
-      <div className="mx-auto h-full px-6">
+      <div className={`mx-auto h-full transition-all duration-300 ${isScrolled ? "px-4" : "px-6"}`}>
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center gap-2">
             <Command className="w-5 h-5 text-primary" />
@@ -60,7 +60,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className={`hidden md:flex items-center ${isScrolled ? "gap-4" : "gap-6"}`}>
+          <div className={`hidden md:flex items-center transition-all duration-300 ${isScrolled ? "gap-3" : "gap-6"}`}>
             {navItems.map((item) => (
               <a
                 key={item.name}
