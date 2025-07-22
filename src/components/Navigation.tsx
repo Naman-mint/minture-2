@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
-import { Command, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+
+// Import your logo image (you should place the logo file in your assets, e.g., src/assets/logo.png)
+import Logo from "../assets/logo.png"; // Adjust if you put it elsewhere
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,7 +59,7 @@ const Navigation = () => {
         <nav className="flex items-center justify-between h-full w-full">
           {/* Left: Logo */}
           <div className="flex items-center gap-2">
-            <Command className="w-5 h-5 text-primary" />
+            <img src={Logo} alt="Minture Logo" className="w-7 h-7 rounded-full" />
             <span className="font-bold text-base">Minture</span>
           </div>
           {/* Middle: Nav Items */}
