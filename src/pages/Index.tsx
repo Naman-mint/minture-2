@@ -208,28 +208,6 @@ const Index = () => {
         </div>
       </section>
 
-{/* Partner Trust Section */}
-      <section className="container px-4 py-20 bg-black">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Trusted by Leading Platforms</h2>
-          <div className="glass rounded-xl p-12">
-            <div className="flex items-center justify-center space-x-4 mb-4">
-              <span className="inline-flex items-center px-3 py-2 rounded-full bg-yellow-500/20 text-yellow-400 text-sm font-medium">
-                Coming Soon
-              </span>
-            </div>
-            <p className="text-muted-foreground">
-              Join the waitlist of leading wallets and fintech platforms
-            </p>
-          </div>
-        </motion.div>
-      </section>
-
       {/* Testimonials Section */}
       <div className="bg-black">
         <TestimonialsSection />
