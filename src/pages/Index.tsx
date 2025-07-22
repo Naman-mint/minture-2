@@ -91,8 +91,7 @@ const Index = () => {
         </motion.div>
       </motion.section>
 
-{/* Logo Carousel */}
-      <LogoCarousel />
+{/* Logo Carousel removed */}
       
       {/* Why Partners Choose Minture */}
       <div id="partners" className="bg-black">
