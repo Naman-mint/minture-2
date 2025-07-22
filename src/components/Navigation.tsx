@@ -20,7 +20,7 @@ const Navigation = () => {
     if (sectionId === 'testimonials') {
       const testimonialSection = document.querySelector('.animate-marquee');
       if (testimonialSection) {
-        const yOffset = -100; // Offset to account for the fixed header
+        const yOffset = -100;
         const y = testimonialSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
@@ -52,16 +52,16 @@ const Navigation = () => {
           : "h-14 bg-[#1B1B1B] w-[95%] max-w-2xl"
       }`}
     >
-      <div className="mx-auto h-full px-4">
+      <div className="mx-auto h-full px-6">
         <nav className="flex items-center justify-center h-full">
-          <div className="flex items-center gap-8">
-            <div className="flex items-center gap-3">
+          {/* Centre everything with equal spacing */}
+          <div className="flex items-center gap-x-8">
+            {/* Logo */}
+            <div className="flex items-center gap-2">
               <Command className="w-5 h-5 text-primary" />
               <span className="font-bold text-base">Minture</span>
             </div>
-
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-6">
+            {/* Menu items */}
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -77,6 +77,7 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
+            {/* CTA Button */}
             <Button 
               onClick={() => scrollToSection('cta')}
               size="sm"
@@ -87,7 +88,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden">
+          <div className="md:hidden absolute right-4">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="glass">
