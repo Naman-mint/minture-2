@@ -1,5 +1,6 @@
 import { Github, Twitter } from "lucide-react";
 import { Button } from "./ui/button";
+import Logo from "../assets/logo.svg"; // Adjust the path according to your project
 
 const Footer = () => {
   return (
@@ -8,7 +9,10 @@ const Footer = () => {
         <div className="glass glass-hover rounded-xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <h3 className="font-medium text-lg">Minture</h3>
+              <div className="flex items-center space-x-2">
+                <img src={Logo} alt="Minture Logo" className="h-6 w-6" />
+                <h3 className="font-medium text-lg">Minture</h3>
+              </div>
               <p className="text-sm text-muted-foreground">
                 SIP-as-a-Service API enabling automated, non-custodial Web3 investments for modern platforms.
               </p>
