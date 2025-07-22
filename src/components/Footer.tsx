@@ -58,7 +58,7 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-white/10">
             <p className="text-sm text-muted-foreground text-center">
-              © {new Date().getFullYear()} Minture. All rights reserved. Partner onboarding and dashboard—coming soon.
+              © {new Date().getFullYear()} Minture. All rights reserved.
             </p>
           </div>
         </div>
