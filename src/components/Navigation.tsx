@@ -58,9 +58,9 @@ const Navigation = () => {
       <div className="mx-auto h-full">
         <nav className="flex items-center justify-between h-full w-full">
           {/* Left: Logo */}
-          <div className="flex items-center gap-2">
-            <img src={Logo} alt="Minture Logo" className="w-12 h-12 rounded-full" />
-            <span className="font-bold text-base">Minture</span>
+          <div className="flex items-center gap-1">
+            <img src={Logo} alt="Minture Logo" className="w-14 h-14 rounded-full" />
+            <span className="font-bold text-2xl">Minture</span>
           </div>
           {/* Middle: Nav Items */}
           <div className="hidden md:flex flex-1 justify-center items-center gap-x-8">
