@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
               Coming Soon
             </span>
           </div>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-center">
             Join the waitlist of leading wallets and fintech platforms
           </p>
         </div>
