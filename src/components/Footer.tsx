@@ -14,9 +14,9 @@ const Footer = () => {
                 <h3 className="font-medium text-2xl">Minture</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                <span>SIP-as-a-Service API enabling automated</span><br />
-                <span>non-custodial Web3 investments</span><br />
-                <span>for modern platforms.</span>              
+                <span>SIP-as-a-Service API enabling </span><br />
+                <span>automated non-custodial Web3 </span><br />
+                <span>investments for modern platforms.</span>              
               </p>
               <div className="flex space-x-4">
                 
