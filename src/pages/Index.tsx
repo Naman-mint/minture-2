@@ -9,7 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import logo from './assets/logo.png';
+import Logo from 'src/assets/logo.png';
 
 const Index = () => {
   return (
@@ -35,7 +35,7 @@ const Index = () => {
           className="inline-block mb-4 px-4 py-1.5 rounded-full glass"
         >
           <span className="text-sm font-medium">
-            <img src={logo} alt="Logo" className="w-4 h-4 inline-block mr-2" />
+            <img src={Logo} alt="Minture Logo" className="w-4 h-4 inline-block mr-2" />
             SIP-as-a-Service API for Web3
           </span>
         </motion.div>
