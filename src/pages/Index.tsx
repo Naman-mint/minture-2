@@ -35,7 +35,7 @@ const Index = () => {
           className="inline-block mb-4 px-4 py-1.5 rounded-full glass"
         >
           <span className="text-sm font-medium">
-            <img src={Logo} alt="Minture Logo" className="w-4 h-4 inline-block mr-2" />
+            <img src={Logo} alt="Minture Logo" className="w-8 h-8 inline-block mr-1" />
             SIP-as-a-Service API for Web3
           </span>
         </motion.div>
@@ -57,9 +57,9 @@ const Index = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
           >
-            <span> The SIP-as-a-Service API for modern wallets and fintechs.</span><br />
-            <span>Enable automated, non-custodial recurring investments for your users.{" "}</span><br />
-            <span className="text-white font-bold">Integrate in minutes, not months.</span>
+            <span> The SIP-as-a-Service API for modern wallets and fintechs</span><br />
+            <span>Enable automated, non-custodial recurring investments for your users{" "}</span><br />
+            <span className="text-white font-bold">Integrate in minutes, not months</span>
           </motion.p>
           
           <motion.div
@@ -231,7 +231,7 @@ const Index = () => {
             Ready to integrate?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join the next generation of platforms offering automated Web3 investments to their users.
+            Join the next generation of platforms offering automated Web3 investments to their users
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="button-gradient">
