@@ -11,7 +11,9 @@ import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Logo from "../assets/logo.png";
 import SpotlightCard from "../components/SpotlightCard";
+import SplashCursor from "../components/SplashCurson.jsx";
 
+<SplashCursor />
 const Index = () => {
   return (
     <div className="min-h-screen bg-black text-foreground">
