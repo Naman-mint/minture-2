@@ -9,6 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import logo from './assets/logo.png';
 
 const Index = () => {
   return (
@@ -34,7 +35,7 @@ const Index = () => {
           className="inline-block mb-4 px-4 py-1.5 rounded-full glass"
         >
           <span className="text-sm font-medium">
-            <Command className="w-4 h-4 inline-block mr-2" />
+            <img src={logo} alt="Logo" className="w-4 h-4 inline-block mr-2" />
             SIP-as-a-Service API for Web3
           </span>
         </motion.div>
@@ -56,8 +57,9 @@ const Index = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
           >
-            The SIP-as-a-Service API for modern wallets and fintechs. Enable automated, non-custodial recurring investments for your users.{" "}
-            <span className="text-white">Integrate in minutes, not months.</span>
+            <span> The SIP-as-a-Service API for modern wallets and fintechs.</span><br />
+            <span>Enable automated, non-custodial recurring investments for your users.{" "}</span><br />
+            <span className="text-white font-bold">Integrate in minutes, not months.</span>
           </motion.p>
           
           <motion.div
@@ -67,10 +69,7 @@ const Index = () => {
             className="flex flex-col sm:flex-row gap-4 items-start"
           >
             <Button size="lg" className="button-gradient">
-              Integrate Minture
-            </Button>
-            <Button size="lg" variant="link" className="text-white opacity-60 cursor-not-allowed">
-              Book a Demo <span className="text-xs ml-1">Coming Soon</span>
+              Join Waitlist
             </Button>
           </motion.div>
         </div>
