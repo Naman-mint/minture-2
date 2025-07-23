@@ -87,7 +87,7 @@ const Navigation = () => {
               size="sm"
               className="button-gradient"
             >
-              Integrate Minture
+              Join Waitlist
             </Button>
           </div>
           {/* Mobile Navigation */}
@@ -123,7 +123,7 @@ const Navigation = () => {
                     }}
                     className="button-gradient mt-4"
                   >
-                    Integrate Minture
+                    Join Waitlist
                   </Button>
                 </div>
               </SheetContent>
