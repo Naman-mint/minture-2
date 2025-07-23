@@ -10,6 +10,7 @@ import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Logo from "../assets/logo.png";
+import SpotlightCard from "../components/SpotlightCard";
 
 const Index = () => {
   return (
@@ -135,17 +136,21 @@ const Index = () => {
                 description: "Dashboard with insights and compliance reporting (coming soon)"
               }
             ].map((item, index) => (
-              <motion.div
+              <SpotlightCard
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
                 className="glass rounded-xl p-6 text-center"
+                spotlightColor="rgba(255,255,255,0.25)"
               >
-                <div className="text-primary font-bold text-2xl mb-4">{item.step}</div>
-                <h3 className="font-semibold mb-3">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
-              </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <div className="text-primary font-bold text-2xl mb-4">{item.step}</div>
+                  <h3 className="font-semibold mb-3">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                </motion.div>
+              </SpotlightCard>
             ))}
           </div>
         </section>
