@@ -9,7 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import Logo from 'src/assets/logo.png';
+import Logo from "../assets/logo.png";
 
 const Index = () => {
   return (
